@@ -15,7 +15,7 @@ public class MakeItame : MonoBehaviour {
         {
             Directory.CreateDirectory(spriteDir);
         }
-
+        //根文件路径（实例（.net中的两个类DirectoryInfo（需要实例化）【不用检查】||Directory（静态）））
         DirectoryInfo rootDirInfo = new DirectoryInfo(Application.dataPath + "/Atlas");
         foreach (DirectoryInfo dirInfo in rootDirInfo.GetDirectories())
         {
